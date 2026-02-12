@@ -1,15 +1,15 @@
-/* style.css — Executive Minimal (Light, Premium Charcoal + subtle blue) */
+/* style.css — Executive Minimal (Premium, slightly darker) */
 
 :root{
-  --bg:#f7f8fb;                 /* soft off-white */
+  --bg:#eef2f7;                 /* darker off-white */
   --panel:#ffffff;              /* cards */
-  --text:#0b1220;               /* near-black charcoal */
-  --muted:#556274;              /* slate-muted */
-  --line:rgba(15,23,42,.10);    /* subtle divider */
+  --text:#0a0f1c;               /* deeper charcoal */
+  --muted:#4b5768;              /* darker muted text */
+  --line:rgba(15,23,42,.14);    /* slightly stronger dividers */
   --accent:#2563eb;             /* restrained blue */
-  --accentSoft:rgba(37,99,235,.14);
-  --shadow:0 18px 44px rgba(2,6,23,.10);
-  --shadow2:0 26px 70px rgba(2,6,23,.14);
+  --accentSoft:rgba(37,99,235,.16);
+  --shadow:0 20px 48px rgba(2,6,23,.12);
+  --shadow2:0 28px 78px rgba(2,6,23,.16);
   --radius:16px;
   --max:1040px;
   --sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji";
@@ -23,9 +23,9 @@ body{
   color:var(--text);
   line-height:1.55;
   background:
-    radial-gradient(1200px 520px at 50% -12%, rgba(37,99,235,.16), transparent 60%),
-    radial-gradient(900px 440px at 12% 18%, rgba(15,23,42,.10), transparent 55%),
-    linear-gradient(180deg, #f7f8fb 0%, #ffffff 62%, #f7f8fb 100%);
+    radial-gradient(1200px 520px at 50% -14%, rgba(37,99,235,.18), transparent 60%),
+    radial-gradient(900px 440px at 12% 18%, rgba(15,23,42,.12), transparent 55%),
+    linear-gradient(180deg, #eef2f7 0%, #ffffff 58%, #eef2f7 100%);
 }
 
 a{color:inherit;text-decoration:none;}
@@ -41,7 +41,7 @@ a:hover{
   position:sticky;
   top:0;
   z-index:30;
-  background:rgba(255,255,255,.86);
+  background:rgba(255,255,255,.84);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -71,13 +71,13 @@ a:hover{
   border:1px solid transparent;
 }
 .nav a:hover{
-  background:rgba(15,23,42,.03);
+  background:rgba(15,23,42,.04);
   border-color:var(--line);
   text-decoration:none;
 }
 .nav a.active{
   background:var(--accentSoft);
-  border-color:rgba(37,99,235,.26);
+  border-color:rgba(37,99,235,.28);
 }
 
 /* Typography */
@@ -137,13 +137,13 @@ a:hover{
   font-size:12.5px;
   padding:6px 10px;
   border-radius:999px;
-  background:rgba(15,23,42,.03);
-  border:1px solid rgba(15,23,42,.10);
+  background:rgba(15,23,42,.04);
+  border:1px solid rgba(15,23,42,.12);
   color:var(--text);
 }
 .badge.accent{
-  background:rgba(37,99,235,.10);
-  border-color:rgba(37,99,235,.22);
+  background:rgba(37,99,235,.12);
+  border-color:rgba(37,99,235,.24);
 }
 
 .metaRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
@@ -151,8 +151,8 @@ a:hover{
   font-size:12.5px;
   padding:6px 10px;
   border-radius:999px;
-  border:1px solid rgba(15,23,42,.10);
-  background:rgba(15,23,42,.02);
+  border:1px solid rgba(15,23,42,.12);
+  background:rgba(15,23,42,.03);
   color:var(--muted);
 }
 
@@ -164,20 +164,20 @@ a:hover{
   gap:8px;
   padding:10px 14px;
   border-radius:14px;
-  border:1px solid rgba(15,23,42,.12);
+  border:1px solid rgba(15,23,42,.14);
   background:#fff;
   color:var(--text);
   font-weight:820;
   font-size:14px;
 }
-.btn:hover{background:rgba(15,23,42,.03);text-decoration:none;}
+.btn:hover{background:rgba(15,23,42,.04);text-decoration:none;}
 .btn.primary{
-  background:linear-gradient(90deg, rgba(37,99,235,.16), rgba(15,23,42,.02));
-  border-color:rgba(37,99,235,.26);
+  background:linear-gradient(90deg, rgba(37,99,235,.18), rgba(15,23,42,.03));
+  border-color:rgba(37,99,235,.28);
 }
 .btn.ghost{
   background:transparent;
-  border-color:rgba(15,23,42,.10);
+  border-color:rgba(15,23,42,.12);
 }
 
 /* Layout Grid */
