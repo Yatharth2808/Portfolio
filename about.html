@@ -1,111 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Yatharth Gautam</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212;
-            color: #f1f1f1;
-            line-height: 1.6;
-            padding-top: 50px;
-        }
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: #1e1e1e;
-            z-index: 10;
-            padding: 10px 0;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 18px;
-            transition: all 0.3s;
-        }
-        nav ul li a:hover {
-            color: #00bcd4;
-        }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #00bcd4;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888888;
-            margin-top: 40px;
-        }
-        footer p {
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                padding: 10px 0;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            main {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Yatharth Gautam</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Yatharth Gautam — Entry-level Software Developer." />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="name">Yatharth Gautam</div>
+          <div class="tag">Entry‑Level Software Developer • Arlington, TX</div>
+        </div>
+        <ul>
+              <li><a class="" href="index.html">Home</a></li>
+              <li><a class="" href="projects.html">Projects</a></li>
+              <li><a class="" href="skills.html">Skills</a></li>
+              <li><a class="" href="resume.html">Resume</a></li>
+              <li><a class="" href="contact.html">Contact</a></li>
+              <li><a class="active" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <h1>About Me</h1>
-        <p>Hello! I'm Yatharth Gautam, an aspiring software developer with a passion for problem-solving and technology. I enjoy working on challenging projects that involve coding, logic, and creating impactful solutions.</p>
-        <p>In my journey, I’ve worked on various projects in areas such as web development, mobile applications, and machine learning. My goal is to continuously learn and apply new skills in the tech world, contributing to innovative software solutions.</p>
-    </main>
+  <main>
+  <section class="section">
+    <div class="container">
+      <div class="kicker">About</div>
+      <h1 class="h1">About me</h1>
+      <p class="lead">
+        I’m an entry-level Software Developer who enjoys building practical applications with clean UX and reliable data flows.
+      </p>
 
-    <footer>
-        <p>&copy; 2024 Yatharth Gautam</p>
-    </footer>
+      <div class="grid" style="margin-top:18px;">
+        <div class="card cardPad col-8">
+          <div class="h2">Background</div>
+          <p class="p">
+            I earned my B.S. in Computer Science from the University of Texas at Arlington (GPA 3.7).
+            My projects cover full-stack workflows, database design, and mobile development. I’m also completing an Executive PG
+            Certification in Data Science & AI to deepen my ML/DL and GenAI skills.
+          </p>
+          <div class="hr"></div>
+          <div class="h2">What I’m learning now</div>
+          <ul class="list">
+            <li>Machine Learning and Deep Learning (TensorFlow)</li>
+            <li>NLP and Generative AI (LangChain)</li>
+            <li>MLOps fundamentals and scalable data workflows (PySpark)</li>
+          </ul>
+        </div>
+
+        <div class="card cardPad col-4">
+          <div class="h2">At a glance</div>
+          <ul class="list">
+            <li><b>Location:</b> Arlington, TX</li>
+            <li><b>Degree:</b> B.S. Computer Science</li>
+            <li><b>Strengths:</b> OOP, debugging, databases</li>
+            <li><b>Tools:</b> Git, Firebase, MySQL, Docker</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="projects.html">Projects</a>
+            <a class="btn" href="Yatharth_Gautam_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="stack" style="gap:10px;">
+        <div>© 2026 Yatharth Gautam</div>
+        <div>
+          <a href="mailto:yatharth2881@gmail.com">yatharth2881@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/yatharth-gautam/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/Yatharth2808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

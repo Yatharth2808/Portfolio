@@ -1,61 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Yatharth Gautam</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Yatharth Gautam</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Yatharth Gautam — Entry-level Software Developer." />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="name">Yatharth Gautam</div>
+          <div class="tag">Entry‑Level Software Developer • Arlington, TX</div>
+        </div>
+        <ul>
+              <li><a class="" href="index.html">Home</a></li>
+              <li><a class="" href="projects.html">Projects</a></li>
+              <li><a class="active" href="skills.html">Skills</a></li>
+              <li><a class="" href="resume.html">Resume</a></li>
+              <li><a class="" href="contact.html">Contact</a></li>
+              <li><a class="" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212;
-            color: #f1f1f1;
-            line-height: 1.6;
-            padding-top: 50px;
-        }
+  <main>
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Skills</div>
+      <h1 class="h1">Technical skills</h1>
+      <p class="lead">Focused list aligned with my projects and current DS/AI program.</p>
 
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: #1e1e1e;
-            z-index: 10;
-            padding: 10px 0;
-        }
+      <div class="grid" style="margin-top:18px;">
+        <div class="card cardPad col-6">
+          <div class="h2">Languages</div>
+          <ul class="list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>C/C++</li>
+          </ul>
+        </div>
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
+        <div class="card cardPad col-6">
+          <div class="h2">Frontend</div>
+          <ul class="list">
+            <li>React</li>
+            <li>HTML5, CSS3</li>
+            <li>Reusable components, client-side validation</li>
+          </ul>
+        </div>
 
-        nav ul li {
-            margin: 0 15px;
-        }
+        <div class="card cardPad col-6">
+          <div class="h2">Backend & Data</div>
+          <ul class="list">
+            <li>Flask (project-based), REST-style APIs</li>
+            <li>Authentication flows (project-based)</li>
+            <li>Firebase Realtime Database</li>
+            <li>MySQL schema design & querying</li>
+          </ul>
+        </div>
 
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 18px;
-            transition: all 0.3s;
-        }
+        <div class="card cardPad col-6">
+          <div class="h2">Tools</div>
+          <ul class="list">
+            <li>Git/GitHub</li>
+            <li>MySQL Workbench, Azure Data Studio</li>
+            <li>Android Studio, IntelliJ, VS Code</li>
+            <li>Docker</li>
+          </ul>
+        </div>
 
-        nav ul li a:hover {
-            color: #00bcd4;
-        }
+        <div class="card cardPad col-12">
+          <div class="h2">DS/AI program focus (in progress)</div>
+          <p class="p">
+            Machine Learning, Deep Learning (TensorFlow), NLP, Generative AI (LangChain), MLOps, PySpark, Power BI.
+          </p>
+          <p class="smallNote">
+            I’m actively building DS/AI portfolio work and will add projects here as they ship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px;
-        }
-
-        h1 {
-            font-size:
+  <footer class="footer">
+    <div class="container">
+      <div class="stack" style="gap:10px;">
+        <div>© 2026 Yatharth Gautam</div>
+        <div>
+          <a href="mailto:yatharth2881@gmail.com">yatharth2881@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/yatharth-gautam/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/Yatharth2808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

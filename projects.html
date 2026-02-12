@@ -1,158 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Yatharth Gautam</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212;
-            color: #f1f1f1;
-            line-height: 1.6;
-            padding-top: 50px;
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: #1e1e1e;
-            z-index: 10;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 18px;
-            transition: all 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #00bcd4;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #00bcd4;
-            margin-bottom: 20px;
-        }
-
-        .project {
-            background-color: #2b2b2b;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .project h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            font-size: 1rem;
-            color: #b0b0b0;
-            margin-bottom: 10px;
-        }
-
-        .project a {
-            color: #00bcd4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888888;
-            margin-top: 40px;
-        }
-
-        footer p {
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                padding: 10px 0;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            main {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Yatharth Gautam</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Yatharth Gautam — Entry-level Software Developer." />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>My Projects</h1>
-        <div class="project">
-            <h2>Project 1: Shopping Route Optimization</h2>
-            <p>Description of the project...</p>
-            <a href="https://github.com/Yatharth2808/project1" target="_blank">View on GitHub</a>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="name">Yatharth Gautam</div>
+          <div class="tag">Entry‑Level Software Developer • Arlington, TX</div>
         </div>
-        <div class="project">
-            <h2>Project 2: Movie Ticketing System</h2>
-            <p>Description of the project...</p>
-            <a href="https://github.com/Yatharth2808/project2" target="_blank">View on GitHub</a>
-        </div>
-    </main>
+        <ul>
+              <li><a class="" href="index.html">Home</a></li>
+              <li><a class="active" href="projects.html">Projects</a></li>
+              <li><a class="" href="skills.html">Skills</a></li>
+              <li><a class="" href="resume.html">Resume</a></li>
+              <li><a class="" href="contact.html">Contact</a></li>
+              <li><a class="" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Yatharth Gautam</p>
-    </footer>
+  <main>
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Projects</div>
+      <h1 class="h1">Selected work</h1>
+      <p class="lead">A few representative projects with clear scope, tech stack, and outcomes.</p>
+
+      <div class="grid" style="margin-top:18px;">
+        <div class="card cardPad col-6">
+          <div class="h2">Shopping List Converter (Route‑Optimized Shopping App)</div>
+          <div class="metaRow">
+            <span>May 2024</span><span>React</span><span>JavaScript</span><span>Firebase</span>
+          </div>
+          <p class="p">
+            Built a React app to structure shopping lists and support an efficient shopping workflow, backed by Firebase persistence.
+          </p>
+          <ul class="list">
+            <li>Implemented real-time CRUD for user lists and items using Firebase.</li>
+            <li>Built reusable UI components and client-side validation for cleaner input.</li>
+            <li>Designed straightforward state flows to keep the UI responsive and predictable.</li>
+          </ul>
+        </div>
+
+        <div class="card cardPad col-6">
+          <div class="h2">ServeMeSystem (Household Services Finder)</div>
+          <div class="metaRow">
+            <span>May 2022</span><span>Android</span><span>Firebase</span><span>OOP</span>
+          </div>
+          <p class="p">
+            Android app to discover service providers by location with search and filtering.
+          </p>
+          <ul class="list">
+            <li>Modeled provider/client entities with OOP for a modular codebase.</li>
+            <li>Integrated Firebase for real-time storage and retrieval across screens.</li>
+            <li>Implemented search/filter UX to help users find relevant providers faster.</li>
+          </ul>
+        </div>
+
+        <div class="card cardPad col-6">
+          <div class="h2">Online Ticketing System (Cinema Booking)</div>
+          <div class="metaRow">
+            <span>Dec 2022</span><span>MySQL</span><span>SQL</span><span>Python</span>
+          </div>
+          <p class="p">
+            Database-backed booking system with a normalized schema and a Python integration layer.
+          </p>
+          <ul class="list">
+            <li>Designed normalized MySQL schema in MySQL Workbench to support booking workflows.</li>
+            <li>Wrote SQL queries for search/booking operations with integrity via keys/constraints.</li>
+            <li>Built Python integration to execute queries and support end-to-end CRUD flows.</li>
+          </ul>
+        </div>
+
+        <div class="card cardPad col-6">
+          <div class="h2">Jade (Contactless Ordering & Receipting)</div>
+          <div class="metaRow">
+            <span>Nov 2021</span><span>Java</span><span>AWT</span><span>OOP</span>
+          </div>
+          <p class="p">
+            Java desktop app for contactless ordering and receipt generation.
+          </p>
+          <ul class="list">
+            <li>Implemented OOP-based models for users, orders, and receipt records.</li>
+            <li>Added input validation and basic error handling for reliable order flows.</li>
+            <li>Built a simple GUI using Java AWT to support end-user interactions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card cardPad" style="margin-top:16px;">
+        <div class="kicker">Next</div>
+        <div class="h2">Making this portfolio stronger</div>
+        <p class="p">
+          Next upgrades: add screenshots, add GitHub repo links per project, and include one deployed demo (GitHub Pages / Render / Firebase Hosting).
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="stack" style="gap:10px;">
+        <div>© 2026 Yatharth Gautam</div>
+        <div>
+          <a href="mailto:yatharth2881@gmail.com">yatharth2881@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/yatharth-gautam/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/Yatharth2808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,144 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Yatharth Gautam</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212;
-            color: #f1f1f1;
-            line-height: 1.6;
-            padding-top: 50px;
-        }
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: #1e1e1e;
-            z-index: 10;
-            padding: 10px 0;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 18px;
-            transition: all 0.3s;
-        }
-        nav ul li a:hover {
-            color: #00bcd4;
-        }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #00bcd4;
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        input, textarea {
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #2b2b2b;
-            color: #ffffff;
-            border: 1px solid #444444;
-            border-radius: 8px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #00bcd4;
-            color: #ffffff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0097a7;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888888;
-            margin-top: 40px;
-        }
-        footer p {
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                padding: 10px 0;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            main {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Yatharth Gautam</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Yatharth Gautam — Entry-level Software Developer." />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="name">Yatharth Gautam</div>
+          <div class="tag">Entry‑Level Software Developer • Arlington, TX</div>
+        </div>
+        <ul>
+              <li><a class="" href="index.html">Home</a></li>
+              <li><a class="" href="projects.html">Projects</a></li>
+              <li><a class="" href="skills.html">Skills</a></li>
+              <li><a class="" href="resume.html">Resume</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+              <li><a class="" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <h1>Contact Me</h1>
-        <form action="#" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+  <main>
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Contact</div>
+      <h1 class="h1">Let’s connect</h1>
+      <p class="lead">Best ways to reach me.</p>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+      <div class="grid" style="margin-top:18px;">
+        <div class="card cardPad col-6">
+          <div class="h2">Email</div>
+          <p class="p"><a href="mailto:yatharth2881@gmail.com">yatharth2881@gmail.com</a></p>
+        </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="card cardPad col-6">
+          <div class="h2">Phone</div>
+          <p class="p"><a href="tel:+16822415371">+1 (682) 241‑5371</a></p>
+        </div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
+        <div class="card cardPad col-6">
+          <div class="h2">LinkedIn</div>
+          <p class="p"><a href="https://www.linkedin.com/in/yatharth-gautam/" target="_blank" rel="noopener">linkedin.com/in/yatharth-gautam</a></p>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Yatharth Gautam</p>
-    </footer>
+        <div class="card cardPad col-6">
+          <div class="h2">GitHub</div>
+          <p class="p"><a href="https://github.com/Yatharth2808" target="_blank" rel="noopener">github.com/Yatharth2808</a></p>
+        </div>
+      </div>
+
+      <div class="card cardPad" style="margin-top:16px;">
+        <div class="kicker">Optional</div>
+        <div class="h2">Message template</div>
+        <p class="p">
+          “Hi Yatharth — I saw your portfolio and wanted to reach out about a role. Are you available for a quick chat?”
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="stack" style="gap:10px;">
+        <div>© 2026 Yatharth Gautam</div>
+        <div>
+          <a href="mailto:yatharth2881@gmail.com">yatharth2881@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/yatharth-gautam/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/Yatharth2808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
